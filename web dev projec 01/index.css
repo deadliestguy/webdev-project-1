@@ -1,0 +1,120 @@
+/* universal selector -> by default mergin and padding zero korte hoi */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "General Sans";
+    box-sizing: border-box;
+}
+/* boiler plate  */
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+}
+/* hero is the ladning page  */
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+#nav{
+    /* majhe je gap ta debar jonno egulo likhte hbe  */
+    display: flex;
+    align-items: center;
+    /* spcae between mane cynthia and menu r majhe space asbe  */
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+}
+#nav a{
+    color: white;
+    /* underline ta sorate gele we use this */
+    text-decoration: none;
+
+    font-size: 18px;
+}
+/* nav theke ektu niche namanor jonno */
+#heading{
+    margin-top: 90px;
+}
+#heading h1{
+    font-family: "General Sans";
+    /* vw korchi cause screen choto boror sthe size ta barbe kombe */
+    font-size: 10vw;
+    /*sob lekha gulo uppercase korar jonno */
+    text-transform: uppercase;
+    /* dark korar jonno */
+    font-weight: 900;
+    /* extra height jate na thake */
+    line-height: 1;
+    /* lekhatake halka korar jonno */
+    opacity: .6;
+    /* left theke olpo charte hbe */
+    margin-left: 30px;
+}
+#heading #secondh1{
+    margin-left: 200px;
+}
+#heading .dummy{
+    width: fit-content;
+}
+.dummy h5{
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: right;
+}
+
+#chotiheading{
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 90px;
+    /* vw korle better hbe */
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+#chotiheading #secondchotiheading{
+    margin-top: .5vw;
+
+}
+
+#herofooter{
+    padding: 2vw;
+    /* tinter majhe gap anar jonno */
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    /* ekebare page er niche anar jonno  */
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    /* nich theke ektu opore korte hbe tai 3% dilm  */
+
+    
+}
+#herofooter a{
+    color: white;
+    /* underline hatanor jonno */
+    text-decoration: none; 
+    text-transform: uppercase;
+}
+#herofooter #iconset{
+    /* pasapasi anar jonno arrow dutoke */
+    display: flex;
+    /* duto arrow r majher gap e rjonno */
+    gap: 5px;
+}
+#herofooter .circle{
+    /* circle korar jonno order radious 50%ditey hoi */
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /* color na dile dekhabe na circle ta */
+    background-color: #888;
+}
